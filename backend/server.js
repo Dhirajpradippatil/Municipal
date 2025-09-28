@@ -20,7 +20,7 @@ app.use("/api/complaints", complaintRoutes);
 app.use("/api/departments", departmentRoutes);
 // MongoDB connection
 mongoose
-  .connect("MONGO_URI=mongodb+srv://rajpatil2282:kTfqKolqqFezOXGl@cluster0.xqlvttn.mongodb.net/municipal?retryWrites=true&w=majority&appName=Cluster0")
+  .connect("mongodb://127.0.0.1:27017/municipaldb")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
